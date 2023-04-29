@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 80px 1fr auto;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    background-color: #FFF5E4;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+   
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    list-style-type: none;
+    color: black;
+    padding-left: 105%;
+    position: relative;
+    top: 25%;
+}
+
+.navbar li a {
+    text-decoration: none;
+    font-size: 30px;
+
+
+}
+
+main {
+    padding: 13%;
+    background-color: #FF9494;
+    width: 100%;
+    margin: 0 auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url(../assets/img/fondo-little.jpg);
+    color: black;
+    font-family: 'Montserrat', sans-serif;}
+
+.strong {
+    color: #FFF5E4;
+
+}
+
+footer {
+    display: flex;
+    background-color: #FFF5E4;
+    color: black;
+    gap: 15%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.sectionLogo {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -50%;
+    left: 20%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.sectionPrincipal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    left: 50%;
+    top: -30%;
+}
+
+.sectionPrincipal2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    left: 57%;
+    top: -30%;
+}
+
+.sectionFinal {
+    display: flex;
+    justify-content: end;
+    position: relative;
+    top: 30%;
+    left: 10%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 140%;
+
+}
+
+.sectionFoin {
+    position: relative;
+    top: 20%;
+
+}
+
+.sectionFofi {
+    position: relative;
+    top: 30%
+}
