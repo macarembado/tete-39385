@@ -23,44 +23,47 @@
                 </ul>
             </nav>
         </header>
-    <main class="main-deli">
-        <div class="sectionExplicacion">
-            <h1>explicacion de como pedir con delivery</h1>
-        </div>
-        <section class="sectionFormulario">
-            <form action="">
-                <p>Ingresa tu nombre completo: <input type="text" name="nombrecompleto"></p>
-                <p>Ingresa tu direccion: <input type="text" name="direccion"></p>
-                <p>
-                    Escribi que vas a querer pedir:<br>
-                    <textarea name="mensaje"></textarea>
-                </p>
-                <input type="submit" value="Enviar la información">
-            </form>
-        </section>
-    </main>
-    <footer>
-        <section class="sectionFoin">
-            <div>
-                <img src="../assets/img/ubicacion.png" alt="">
-                3891 Ranchview Dr. Richardson, California 62639
+        <main class="main-deli">
+            <div class="section-exp">
+                <h1>Llena el formulario y en minutos nos contacatmos con vos!!!!</h1>
             </div>
-        </section>
-        <section class="sectionFome">
-            <a href="https://es-la.facebook.com/" target="_blank">
-                <img src="../assets/img/logo-facebook.png" alt="">
-            </a>
-            <a href="https://www.instagram.com/" target="_blank">
-                <img src="../assets/img/logo-instagram.png" alt="">
-            </a>
-            <a href="https://www.whatsapp.com/?lang=es" target="_blank">
-                <img src="../assets/img/logo-whatsapp.png" alt="">
-            </a>
-        </section>
-        <section class="sectionFofi">
-            <h4>Horario de atencion: de 08:00 a 20:00 </h4>
-        </section>
-    </footer>
+            <section class="section-form">
+                <form action="">
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+
+                    <label for="direccion">Direccion:</label>
+                    <input type="email" id="correo" name="direccion" required>
+
+                    <label for="mensaje">Que deseas pedir?:</label>
+                    <textarea id="mensaje" name="mensaje" required></textarea>
+
+                    <button type="submit">Enviar</button>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <section class="sectionFoin">
+                <div>
+                    <img src="../assets/img/ubicacion.png" alt="">
+                    3891 Ranchview Dr. Richardson, California 62639
+                </div>
+            </section>
+            <section class="sectionFome">
+                <a href="https://es-la.facebook.com/" target="_blank">
+                    <img src="../assets/img/logo-facebook.png" alt="">
+                </a>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img src="../assets/img/logo-instagram.png" alt="">
+                </a>
+                <a href="https://www.whatsapp.com/?lang=es" target="_blank">
+                    <img src="../assets/img/logo-whatsapp.png" alt="">
+                </a>
+            </section>
+            <section class="sectionFofi">
+                <h4>Horario de atencion: de 08:00 a 20:00 </h4>
+            </section>
+        </footer>
 </body>
 
 </html>

@@ -21,6 +21,18 @@ header {
     background-color: #FFF5E4;
 }
 
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #FFF5E4;
+    color: black;
+    gap: 15%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/*ÉSTA ES LA NAVBAR*/
+
 .nav {
     grid-column: 4/9;
 
@@ -48,7 +60,6 @@ header {
     text-decoration: none;
     list-style: none;
     font-weight: 800;
-
 }
 
 .main-index,
@@ -71,12 +82,12 @@ header {
     grid-template-rows: repeat(3, 1fr);
 }
 
+/* ÉSTE ES EL INDEX */
 
 .strong {
     color: #FFF5E4;
-
+    font-weight: bold
 }
-
 
 .sectionLogo {
     display: grid;
@@ -95,7 +106,6 @@ header {
     flex-direction: column;
     justify-content: end;
     align-items: end;
-
 }
 
 .sectionPrincipal2 {
@@ -104,7 +114,6 @@ header {
     grid-row: 3/4;
     flex-direction: column;
     justify-content: center;
-
 }
 
 .sectionFinal {
@@ -115,25 +124,11 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
-
-footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    background-color: #FFF5E4;
-    color: black;
-    gap: 15%;
-    font-family: 'Montserrat', sans-serif;
-}
-
-
-
 
 .sectionFoin {
     display: flex;
     align-items: center;
-
 }
 
 .sectionFome {
@@ -147,10 +142,9 @@ footer {
     display: flex;
     justify-content: end;
     align-items: center;
-
 }
 
-
+/* PÁGINA NOSOTROS  */
 
 .info-nos {
     display: grid;
@@ -172,15 +166,15 @@ footer {
     display: grid;
     grid-row: 2;
     grid-column: 2/3;
-
 }
 
 .img-nos2 {
     display: grid;
     grid-row: 2;
     grid-column: 5/6;
-
 }
+
+/* ACÁ EMPIEZAN LAS CARD DE PRODUCTOS */
 
 .card-tortas {
     display: grid;
@@ -190,12 +184,11 @@ footer {
     align-items: end;
     max-width: 360px;
     border: 1px solid #ccc;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 10px black;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 10px;
     margin-top: 5%;
-
 }
 
 .card-img1 {
@@ -212,11 +205,9 @@ footer {
     justify-content: center;
     align-items: center;
     gap: 10px
-
 }
 
 .card-muffins {
-
     display: grid;
     grid-row: 1/2;
     grid-column: 5/6;
@@ -224,12 +215,11 @@ footer {
     align-items: end;
     max-width: 360px;
     border: 1px solid #ccc;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 10px black;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 10px;
     margin-top: 5%;
-
 }
 
 .card-img2 {
@@ -262,7 +252,7 @@ footer {
     align-items: end;
     max-width: 360px;
     border: 1px solid #ccc;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 10px black;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 10px;
@@ -300,7 +290,7 @@ footer {
     align-items: end;
     max-width: 360px;
     border: 1px solid #ccc;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 10px black;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 10px;
@@ -338,7 +328,7 @@ footer {
     align-items: end;
     max-width: 360px;
     border: 1px solid #ccc;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 10px black;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 10px;
@@ -367,8 +357,7 @@ footer {
     gap: 10px
 }
 
-.card-helado{
-
+.card-helado {
     display: grid;
     grid-row: 3/4;
     grid-column: 5/6;
@@ -376,12 +365,11 @@ footer {
     align-items: end;
     max-width: 360px;
     border: 1px solid #ccc;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 10px black;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 10px;
     ;
-
 }
 
 .card-img6 {
@@ -392,7 +380,6 @@ footer {
     height: auto;
     margin-bottom: 10px;
     object-fit: contain;
-
 }
 
 
@@ -403,4 +390,256 @@ footer {
     justify-content: center;
     align-items: center;
     gap: 10px
+}
+
+/* ACÁ EMPIEZAN LAS CARDS DE COMBOS */
+
+.card-combo1 {
+    display: grid;
+    grid-row: 1/2;
+    grid-column: 2/3;
+    justify-content: center;
+    align-items: end;
+    max-width: 360px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 10px black;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    margin-top: 5%;
+}
+
+.card-combimg1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    object-fit: contain;
+}
+
+
+.card-combcontent1 {
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px
+}
+
+.card-combo2 {
+    display: grid;
+    grid-row: 1/2;
+    grid-column: 5/6;
+    justify-content: center;
+    align-items: end;
+    max-width: 360px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 10px black;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    margin-top: 5%;
+}
+
+.card-combimg2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    object-fit: contain;
+}
+
+
+.card-combcontent2 {
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px
+}
+
+.card-combo3 {
+    display: grid;
+    grid-row: 2/3;
+    grid-column: 2/3;
+    justify-content: center;
+    align-items: end;
+    max-width: 360px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 10px black;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    ;
+}
+
+.card-combimg3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    object-fit: contain;
+}
+
+
+.card-combcontent3 {
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px
+}
+
+.card-combo4 {
+    display: grid;
+    grid-row: 2/3;
+    grid-column: 5/6;
+    justify-content: center;
+    align-items: end;
+    max-width: 360px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 10px black;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    
+}
+
+.card-combimg4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    object-fit: contain;
+}
+
+
+.card-combcontent4 {
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px
+}
+
+.card-combo5 {
+    display: grid;
+    grid-row: 3/4;
+    grid-column: 2/3;
+    justify-content: center;
+    align-items: end;
+    max-width: 360px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 10px black;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    
+}
+
+.card-combimg5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    object-fit: contain;
+}
+
+
+.card-combcontent5 {
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px
+}
+
+.card-combo6 {
+    display: grid;
+    grid-row: 3/4;
+    grid-column: 5/6;
+    justify-content: center;
+    align-items: end;
+    max-width: 360px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 10px black;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    
+}
+
+.card-combimg6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    object-fit: contain;
+}
+
+
+.card-combcontent6 {
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px
+}
+
+/* FORM DELIVERY */
+
+.section-form{
+    display: grid;
+    grid-row: 2/3;
+    grid-column: 2;
+    justify-content: center;
+    align-items: end;
+}
+form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-weight: bold;
+}
+
+.section-exp{
+    display: grid;
+    grid-row: 1/2;
+    grid-column: 1/4;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5%;
 }
