@@ -168,16 +168,239 @@ footer {
     align-items: center;
 }
 
-.img-nos{
+.img-nos {
     display: grid;
     grid-row: 2;
     grid-column: 2/3;
 
 }
 
-.img-nos2{
+.img-nos2 {
     display: grid;
     grid-row: 2;
     grid-column: 5/6;
 
+}
+
+.card-tortas {
+    display: grid;
+    grid-row: 1/2;
+    grid-column: 2/3;
+    justify-content: center;
+    align-items: end;
+    max-width: 360px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    margin-top: 5%;
+
+}
+
+.card-img1 {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+
+.card-content1 {
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px
+
+}
+
+.card-muffins {
+
+    display: grid;
+    grid-row: 1/2;
+    grid-column: 5/6;
+    justify-content: center;
+    align-items: end;
+    max-width: 360px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    margin-top: 5%;
+
+}
+
+.card-img2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    object-fit: contain;
+
+}
+
+
+.card-content2 {
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px
+}
+
+.card-minitorta {
+
+    display: grid;
+    grid-row: 2/3;
+    grid-column: 2/3;
+    justify-content: center;
+    align-items: end;
+    max-width: 360px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    ;
+
+}
+
+.card-img3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    object-fit: contain;
+
+}
+
+
+.card-content3 {
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px
+}
+
+.card-macarons {
+
+    display: grid;
+    grid-row: 2/3;
+    grid-column: 5/6;
+    justify-content: center;
+    align-items: end;
+    max-width: 360px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    ;
+
+}
+
+.card-img4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    object-fit: contain;
+
+}
+
+
+.card-content4 {
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px
+}
+
+.card-facturas {
+
+    display: grid;
+    grid-row: 3/4;
+    grid-column: 2/3;
+    justify-content: center;
+    align-items: end;
+    max-width: 360px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    ;
+
+}
+
+.card-img5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    object-fit: contain;
+
+}
+
+
+.card-content5 {
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px
+}
+
+.card-helado{
+
+    display: grid;
+    grid-row: 3/4;
+    grid-column: 5/6;
+    justify-content: center;
+    align-items: end;
+    max-width: 360px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    ;
+
+}
+
+.card-img6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    object-fit: contain;
+
+}
+
+
+.card-content6 {
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px
 }
