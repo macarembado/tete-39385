@@ -511,7 +511,7 @@ footer {
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 10px;
-    
+
 }
 
 .card-combimg4 {
@@ -546,7 +546,7 @@ footer {
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 10px;
-    
+
 }
 
 .card-combimg5 {
@@ -581,7 +581,7 @@ footer {
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 10px;
-    
+
 }
 
 .card-combimg6 {
@@ -606,13 +606,14 @@ footer {
 
 /* FORM DELIVERY */
 
-.section-form{
+.section-form {
     display: grid;
     grid-row: 2/3;
     grid-column: 2;
     justify-content: center;
     align-items: end;
 }
+
 form {
     width: 100%;
     max-width: 600px;
@@ -635,11 +636,82 @@ textarea {
     font-weight: bold;
 }
 
-.section-exp{
+.section-exp {
     display: grid;
     grid-row: 1/2;
     grid-column: 1/4;
     justify-content: center;
     align-items: center;
     margin-left: 5%;
+}
+
+@media(max-width:425px) {
+
+
+    .nav {
+        grid-column: 2/5;
+    }
+
+    .navbar {
+        gap: 10%;
+    }
+
+
+
+    .navbar li {
+        font-size: 15px;
+        padding-left: 2%;
+    }
+
+    .sectionLogo {
+        grid-column: 4/5;
+
+
+    }
+
+    .sectionPrincipal {
+        grid-column: 2/6;
+        grid-row: 2/3;
+        flex-direction: column;
+        justify-content: center;
+        align-items: end;
+    }
+
+    .sectionPrincipal2 {
+
+        grid-column: 2/6;
+        grid-row: 3/4;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .sectionFinal {
+        grid-row: 3/4;
+        grid-column: 4/7;
+        font-size: 105%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sectionFoin {
+        align-items: center;
+        font-size: 70%;
+    }
+
+    .sectionFome {
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+
+    .sectionFofi {
+        justify-content: end;
+        align-items: center;
+        font-size: 60%;
+    }
+
+
+
 }
