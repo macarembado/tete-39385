@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -18,7 +19,7 @@ header {
     grid-template-columns: repeat(11, 1fr);
     align-items: center;
     height: 80px;
-    background-color: #FFF5E4;
+    background-color:#FFF5E4;
 }
 
 footer {
@@ -38,7 +39,22 @@ footer {
 
 }
 
-.navbar {
+.container-fluid{
+    background-color:#FFF5E4;
+       
+
+}
+
+.navbar{
+    --bs-navbar-padding-y: 0.0rem;
+}
+
+.nav-link
+{
+    font-size: 30px;
+}
+
+.navbarb {
     display: flex;
     flex-direction: row;
     gap: 5px;
@@ -46,7 +62,7 @@ footer {
 
 }
 
-.navbar li {
+.navbarb li {
     display: inline-block;
     text-decoration: none;
     list-style: none;
@@ -54,12 +70,15 @@ footer {
     padding-left: 10px;
     color: black;
     font-family: 'Montserrat', sans-serif;
+    
 }
 
-.navbar a {
+.navbarb a {
     text-decoration: none;
     list-style: none;
     font-weight: 800;
+    color: black;
+    font-weight: bold;
 }
 
 .main-index,
@@ -655,15 +674,14 @@ textarea {
         grid-column: 2/5;
     }
 
-    .navbar {
-        gap: 10%;
+    .navbarb {
+        gap: 6%;
     }
 
 
 
-    .navbar li {
-        font-size: 15px;
-        padding-left: 2%;
+    .navbarb li {
+        font-size: 12px;
     }
 
     .sectionLogo {
@@ -975,11 +993,11 @@ textarea {
         grid-column: 1/4;
     }
 
-    .navbar {
+    .navbarb {
         gap: 5%;
     }
 
-    .navbar li {
+    .navbarb li {
 
         font-size: 13px;
         padding-left: 6%;
