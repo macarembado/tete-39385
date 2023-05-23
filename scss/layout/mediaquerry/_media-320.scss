@@ -1,0 +1,269 @@
+@media(max-width:320px) {
+    .hero {
+        max-width: 100%;
+    }
+
+    header {
+        .nav {
+            grid-column: 1/4;
+
+            .navbarb {
+                gap: 5%;
+
+                li {
+                    font-size: 13px;
+                    padding-left: 4%;
+                }
+            }
+        }
+    }
+
+    footer {
+
+        .sectionFoin {
+            align-items: center;
+            font-size: 60%;
+        }
+
+        .sectionFome {
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .sectionFofi {
+            justify-content: center;
+            align-items: center;
+            font-size: 60%;
+        }
+    }
+
+    .main-index {
+        .sectionLogo {
+            grid-column: 3/6;
+        }
+
+        .sectionPrincipal {
+            grid-column: 2/7;
+            grid-row: 2/3;
+            justify-content: start;
+            align-items: end;
+        }
+
+        .sectionPrincipal2 {
+            grid-column: 2/7;
+            grid-row: 3/4;
+        }
+
+        .sectionFinal {
+            grid-column: 5/6;
+            justify-content: end;
+            align-items: end;
+        }
+    }
+
+    .main-prod {
+        .card-tortas {
+            display: grid;
+            grid-row: 1/2;
+            grid-column: 1/2;
+            justify-content: center;
+            align-items: end;
+            max-width: 300px;
+            border: 1px solid #ccc;
+            box-shadow: 2px 2px 10px black;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            margin-top: 5%;
+
+            .card-img1 {
+                width: 50%;
+                height: auto;
+                margin-bottom: 10px;
+            }
+
+            .card-content1 {
+                font-weight: bold;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 10px
+            }
+        }
+
+        .card-muffins {
+            display: grid;
+            grid-row: 4/5;
+            grid-column: 1/2;
+            justify-content: center;
+            align-items: end;
+            max-width: 300px;
+            border: 1px solid #ccc;
+            box-shadow: 2px 2px 10px black;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            margin-top: 5%;
+
+            .card-img2 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: auto;
+                margin-bottom: 10px;
+                object-fit: contain;
+            }
+
+            .card-content2 {
+                font-weight: bold;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 10px
+            }
+        }
+
+        .card-minitorta {
+
+            display: grid;
+            grid-row: 2/3;
+            grid-column: 1/2;
+            justify-content: center;
+            align-items: end;
+            max-width: 300px;
+            border: 1px solid #ccc;
+            box-shadow: 2px 2px 10px black;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            margin-top: 5%;
+
+            .card-img3 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: auto;
+                margin-bottom: 10px;
+                object-fit: contain;
+            }
+
+            .card-content3 {
+                font-weight: bold;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 10px
+            }
+        }
+
+        .card-macarons {
+            display: grid;
+            grid-row: 5/6;
+            grid-column: 1/2;
+            justify-content: center;
+            align-items: end;
+            max-width: 300px;
+            border: 1px solid #ccc;
+            box-shadow: 2px 2px 10px black;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            margin-top: 5%;
+
+            .card-img4 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: auto;
+                margin-bottom: 10px;
+                object-fit: contain;
+            }
+
+            .card-content4 {
+                font-weight: bold;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 10px
+            }
+        }
+
+        .card-facturas {
+            display: grid;
+            grid-row: 3/4;
+            grid-column: 1/2;
+            justify-content: center;
+            align-items: end;
+            max-width: 300px;
+            border: 1px solid #ccc;
+            box-shadow: 2px 2px 10px black;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            margin-top: 5%;
+
+            .card-img5 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: auto;
+                margin-bottom: 10px;
+                object-fit: contain;
+            }
+
+            .card-content5 {
+                font-weight: bold;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 10px
+            }
+        }
+
+        .card-helado {
+            display: grid;
+            grid-row: 6/7;
+            grid-column: 1/2;
+            justify-content: center;
+            align-items: end;
+            max-width: 300px;
+            border: 1px solid #ccc;
+            box-shadow: 2px 2px 10px black;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            margin-top: 5%;
+
+            .card-img6 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: auto;
+                margin-bottom: 10px;
+                object-fit: contain;
+            }
+
+            .card-content6 {
+                font-weight: bold;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 10px
+            }
+        }
+
+
+    }
+}

@@ -1,0 +1,8 @@
+.hero {
+    width: 100%;
+    display: grid;
+    margin: 0 auto;
+    grid-template-rows: 80px 1fr auto;
+    text-decoration: none;
+    list-style: none;
+}

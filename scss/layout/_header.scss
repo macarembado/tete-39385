@@ -1,0 +1,38 @@
+header {
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    align-items: center;
+    height: 80px;
+    background-color: #FFF5E4;
+
+    .nav {
+        grid-column: 4/9;
+
+        .navbarb {
+            display: flex;
+            flex-direction: row;
+            gap: 5px;
+            list-style-type: none;
+
+            li {
+                display: inline-block;
+                text-decoration: none;
+                list-style: none;
+                font-size: 30px;
+                padding-left: 10px;
+                color: black;
+                font-family: 'Montserrat', sans-serif;
+
+                a {
+                    text-decoration: none;
+                    list-style: none;
+                    font-weight: 800;
+                    color: black;
+                    font-weight: bold;
+                }
+            
+                }
+        }
+    }
+ 
+}

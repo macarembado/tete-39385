@@ -1,0 +1,654 @@
+.main-index,
+.main-prod,
+.main-deli,
+.main-nos,
+.main-combo {
+    background-color: #FF9494;
+    width: 100%;
+    margin: 0 auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url(../assets/img/fondo-little.jpg);
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.main-index {
+    .sectionLogo {
+        display: grid;
+        grid-column: 4/6;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sectionPrincipal {
+        display: grid;
+        grid-column: 4/6;
+        grid-row: 2/3;
+        flex-direction: column;
+        justify-content: end;
+        align-items: end;
+
+        .strong {
+            color: #FFF5E4;
+            font-weight: bold
+        }
+    }
+
+    .sectionPrincipal2 {
+        display: grid;
+        grid-column: 4/6;
+        grid-row: 3/4;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .sectionFinal {
+        display: grid;
+        grid-row: 3/4;
+        grid-column: 5/7;
+        font-size: 105%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.main-nos {
+    .info-nos {
+        display: grid;
+        grid-row: 1;
+        grid-column: 3/5;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .info-nos2 {
+        display: grid;
+        grid-row: 3/5;
+        grid-column: 2/7;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img-nos {
+        display: grid;
+        grid-row: 2;
+        grid-column: 2/3;
+    }
+
+    .img-nos2 {
+        display: grid;
+        grid-row: 2;
+        grid-column: 5/6;
+    }
+}
+
+.main-prod {
+    .card-tortas {
+        display: grid;
+        grid-row: 1/2;
+        grid-column: 2/3;
+        justify-content: center;
+        align-items: end;
+        max-width: 360px;
+        border: 1px solid #ccc;
+        box-shadow: 2px 2px 10px black;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        margin-top: 5%;
+        
+
+        .card-img1 {
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .card-content1 {
+            font-weight: bold;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px
+        }
+
+        animation-name: cardEntrance;
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards;
+      }
+      
+      @keyframes cardEntrance {
+        0% {
+          opacity: 0;
+          transform: translateY(50px);
+        }
+      
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    }
+
+    .card-muffins {
+        display: grid;
+        grid-row: 1/2;
+        grid-column: 5/6;
+        justify-content: center;
+        align-items: end;
+        max-width: 360px;
+        border: 1px solid #ccc;
+        box-shadow: 2px 2px 10px black;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        margin-top: 5%;
+
+        .card-img2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+            object-fit: contain;
+        }
+
+        .card-content2 {
+            font-weight: bold;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px
+        }
+        animation-name: cardEntrance;
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards;
+      }
+      
+      @keyframes cardEntrance {
+        0% {
+          opacity: 0;
+          transform: translateY(50px);
+        }
+      
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    
+
+    .card-minitorta {
+
+        display: grid;
+        grid-row: 2/3;
+        grid-column: 2/3;
+        justify-content: center;
+        align-items: end;
+        max-width: 360px;
+        border: 1px solid #ccc;
+        box-shadow: 2px 2px 10px black;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        ;
+
+        .card-img3 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+            object-fit: contain;
+        }
+
+        .card-content3 {
+            font-weight: bold;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px
+        }
+        animation-name: cardEntrance;
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards;
+      }
+      
+      @keyframes cardEntrance {
+        0% {
+          opacity: 0;
+          transform: translateY(50px);
+        }
+      
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+    .card-macarons {
+
+        display: grid;
+        grid-row: 2/3;
+        grid-column: 5/6;
+        justify-content: center;
+        align-items: end;
+        max-width: 360px;
+        border: 1px solid #ccc;
+        box-shadow: 2px 2px 10px black;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        ;
+
+        .card-img4 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+            object-fit: contain;
+        }
+
+        .card-content4 {
+            font-weight: bold;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px
+        }
+        animation-name: cardEntrance;
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards;
+      }
+      
+      @keyframes cardEntrance {
+        0% {
+          opacity: 0;
+          transform: translateY(50px);
+        }
+      
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    
+
+    .card-facturas {
+
+        display: grid;
+        grid-row: 3/4;
+        grid-column: 2/3;
+        justify-content: center;
+        align-items: end;
+        max-width: 360px;
+        border: 1px solid #ccc;
+        box-shadow: 2px 2px 10px black;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        ;
+
+        .card-img5 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+            object-fit: contain;
+        }
+
+        .card-content5 {
+            font-weight: bold;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px
+        }
+        animation-name: cardEntrance;
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards;
+      }
+      
+      @keyframes cardEntrance {
+        0% {
+          opacity: 0;
+          transform: translateY(50px);
+        }
+      
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    
+
+    .card-helado {
+        display: grid;
+        grid-row: 3/4;
+        grid-column: 5/6;
+        justify-content: center;
+        align-items: end;
+        max-width: 360px;
+        border: 1px solid #ccc;
+        box-shadow: 2px 2px 10px black;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        ;
+
+        .card-img6 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+            object-fit: contain;
+        }
+
+        .card-content6 {
+            font-weight: bold;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px
+        }
+        animation-name: cardEntrance;
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards;
+      }
+      
+      @keyframes cardEntrance {
+        0% {
+          opacity: 0;
+          transform: translateY(50px);
+        }
+      
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    
+
+.main-combo {
+    .card-combo1 {
+        display: grid;
+        grid-row: 1/2;
+        grid-column: 2/3;
+        justify-content: center;
+        align-items: end;
+        max-width: 360px;
+        border: 1px solid #ccc;
+        box-shadow: 2px 2px 10px black;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        margin-top: 5%;
+
+        .card-combimg1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+            object-fit: contain;
+        }
+
+        .card-combcontent1 {
+            font-weight: bold;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px
+        }
+    }
+
+    .card-combo2 {
+        display: grid;
+        grid-row: 1/2;
+        grid-column: 5/6;
+        justify-content: center;
+        align-items: end;
+        max-width: 360px;
+        border: 1px solid #ccc;
+        box-shadow: 2px 2px 10px black;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        margin-top: 5%;
+
+        .card-combimg2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+            object-fit: contain;
+        }
+
+        .card-combcontent2 {
+            font-weight: bold;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px
+        }
+    }
+
+    .card-combo3 {
+        display: grid;
+        grid-row: 2/3;
+        grid-column: 2/3;
+        justify-content: center;
+        align-items: end;
+        max-width: 360px;
+        border: 1px solid #ccc;
+        box-shadow: 2px 2px 10px black;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        ;
+
+        .card-combimg3 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+            object-fit: contain;
+        }
+
+        .card-combcontent3 {
+            font-weight: bold;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px
+        }
+    }
+
+    .card-combo4 {
+        display: grid;
+        grid-row: 2/3;
+        grid-column: 5/6;
+        justify-content: center;
+        align-items: end;
+        max-width: 360px;
+        border: 1px solid #ccc;
+        box-shadow: 2px 2px 10px black;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+
+        .card-combimg4 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+            object-fit: contain;
+        }
+
+        .card-combcontent4 {
+            font-weight: bold;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px
+        }
+    }
+
+    .card-combo5 {
+        display: grid;
+        grid-row: 3/4;
+        grid-column: 2/3;
+        justify-content: center;
+        align-items: end;
+        max-width: 360px;
+        border: 1px solid #ccc;
+        box-shadow: 2px 2px 10px black;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+
+        .card-combimg5 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+            object-fit: contain;
+        }
+
+        .card-combcontent5 {
+            font-weight: bold;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px
+        }
+    }
+
+    .card-combo6 {
+        display: grid;
+        grid-row: 3/4;
+        grid-column: 5/6;
+        justify-content: center;
+        align-items: end;
+        max-width: 360px;
+        border: 1px solid #ccc;
+        box-shadow: 2px 2px 10px black;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+
+        .card-combimg6 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+            object-fit: contain;
+        }
+
+        .card-combcontent6 {
+            font-weight: bold;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px
+        }
+    }
+}
+
+.section-exp {
+    display: grid;
+    grid-row: 1/2;
+    grid-column: 2/5;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+}
+
+.section-form {
+    display: grid;
+    grid-row: 2/3;
+    grid-column: 2/3;
+
+    form {
+        width: 250%;
+        max-width: 800px;
+        margin: 0 auto;
+        font-weight: bold;
+
+        label {
+            display: block;
+            margin-bottom: 25px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+
+        button[type="submit"] {
+            background-color: #000000;
+            color: #FF9494;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+    }
+}

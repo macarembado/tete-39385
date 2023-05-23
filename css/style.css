@@ -1,84 +1,51 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 
 .hero {
-    width: 100%;
-    display: grid;
-    margin: 0 auto;
-    grid-template-rows: 80px 1fr auto;
-    text-decoration: none;
-    list-style: none;
+  width: 100%;
+  display: grid;
+  margin: 0 auto;
+  grid-template-rows: 80px 1fr auto;
+  text-decoration: none;
+  list-style: none;
 }
 
 header {
-    display: grid;
-    grid-template-columns: repeat(11, 1fr);
-    align-items: center;
-    height: 80px;
-    background-color:#FFF5E4;
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  align-items: center;
+  height: 80px;
+  background-color: #FFF5E4;
 }
-
-footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    background-color: #FFF5E4;
-    color: black;
-    gap: 15%;
-    font-family: 'Montserrat', sans-serif;
+header .nav {
+  grid-column: 4/9;
 }
-
-
-/*ÉSTA ES LA NAVBAR*/
-
-.nav {
-    grid-column: 4/9;
-
+header .nav .navbarb {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  list-style-type: none;
 }
-
-.container-fluid{
-    background-color:#FFF5E4;
-       
-
+header .nav .navbarb li {
+  display: inline-block;
+  text-decoration: none;
+  list-style: none;
+  font-size: 30px;
+  padding-left: 10px;
+  color: black;
+  font-family: "Montserrat", sans-serif;
 }
-
-.navbar{
-    --bs-navbar-padding-y: 0.0rem;
-}
-
-.nav-link
-{
-    font-size: 30px;
-}
-
-.navbarb {
-    display: flex;
-    flex-direction: row;
-    gap: 5px;
-    list-style-type: none;
-
-}
-
-.navbarb li {
-    display: inline-block;
-    text-decoration: none;
-    list-style: none;
-    font-size: 30px;
-    padding-left: 10px;
-    color: black;
-    font-family: 'Montserrat', sans-serif;
-    
-}
-
-.navbarb a {
-    text-decoration: none;
-    list-style: none;
-    font-weight: 800;
-    color: black;
-    font-weight: bold;
+header .nav .navbarb li a {
+  text-decoration: none;
+  list-style: none;
+  font-weight: 800;
+  color: black;
+  font-weight: bold;
 }
 
 .main-index,
@@ -86,163 +53,956 @@ footer {
 .main-deli,
 .main-nos,
 .main-combo {
-    background-color: #FF9494;
+  background-color: #FF9494;
+  width: 100%;
+  margin: 0 auto;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image: url(../assets/img/fondo-little.jpg);
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.main-index .sectionLogo {
+  display: grid;
+  grid-column: 4/6;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main-index .sectionPrincipal {
+  display: grid;
+  grid-column: 4/6;
+  grid-row: 2/3;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+}
+.main-index .sectionPrincipal .strong {
+  color: #FFF5E4;
+  font-weight: bold;
+}
+.main-index .sectionPrincipal2 {
+  display: grid;
+  grid-column: 4/6;
+  grid-row: 3/4;
+  flex-direction: column;
+  justify-content: center;
+}
+.main-index .sectionFinal {
+  display: grid;
+  grid-row: 3/4;
+  grid-column: 5/7;
+  font-size: 105%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-nos .info-nos {
+  display: grid;
+  grid-row: 1;
+  grid-column: 3/5;
+  justify-content: center;
+  align-items: center;
+}
+.main-nos .info-nos2 {
+  display: grid;
+  grid-row: 3/5;
+  grid-column: 2/7;
+  justify-content: center;
+  align-items: center;
+}
+.main-nos .img-nos {
+  display: grid;
+  grid-row: 2;
+  grid-column: 2/3;
+}
+.main-nos .img-nos2 {
+  display: grid;
+  grid-row: 2;
+  grid-column: 5/6;
+}
+
+.main-prod .card-tortas {
+  display: grid;
+  grid-row: 1/2;
+  grid-column: 2/3;
+  justify-content: center;
+  align-items: end;
+  max-width: 360px;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 10px black;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  margin-top: 5%;
+  animation-name: cardEntrance;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+.main-prod .card-tortas .card-img1 {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+.main-prod .card-tortas .card-content1 {
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+@keyframes cardEntrance {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card-muffins {
+  display: grid;
+  grid-row: 1/2;
+  grid-column: 5/6;
+  justify-content: center;
+  align-items: end;
+  max-width: 360px;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 10px black;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  margin-top: 5%;
+  animation-name: cardEntrance;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+.card-muffins .card-img2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  object-fit: contain;
+}
+.card-muffins .card-content2 {
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+@keyframes cardEntrance {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.card-minitorta {
+  display: grid;
+  grid-row: 2/3;
+  grid-column: 2/3;
+  justify-content: center;
+  align-items: end;
+  max-width: 360px;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 10px black;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  animation-name: cardEntrance;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+.card-minitorta .card-img3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  object-fit: contain;
+}
+.card-minitorta .card-content3 {
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+@keyframes cardEntrance {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.card-macarons {
+  display: grid;
+  grid-row: 2/3;
+  grid-column: 5/6;
+  justify-content: center;
+  align-items: end;
+  max-width: 360px;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 10px black;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  animation-name: cardEntrance;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+.card-macarons .card-img4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  object-fit: contain;
+}
+.card-macarons .card-content4 {
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+@keyframes cardEntrance {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.card-facturas {
+  display: grid;
+  grid-row: 3/4;
+  grid-column: 2/3;
+  justify-content: center;
+  align-items: end;
+  max-width: 360px;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 10px black;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  animation-name: cardEntrance;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+.card-facturas .card-img5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  object-fit: contain;
+}
+.card-facturas .card-content5 {
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+@keyframes cardEntrance {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.card-helado {
+  display: grid;
+  grid-row: 3/4;
+  grid-column: 5/6;
+  justify-content: center;
+  align-items: end;
+  max-width: 360px;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 10px black;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  animation-name: cardEntrance;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+.card-helado .card-img6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  object-fit: contain;
+}
+.card-helado .card-content6 {
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+@keyframes cardEntrance {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.main-combo .card-combo1 {
+  display: grid;
+  grid-row: 1/2;
+  grid-column: 2/3;
+  justify-content: center;
+  align-items: end;
+  max-width: 360px;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 10px black;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  margin-top: 5%;
+}
+.main-combo .card-combo1 .card-combimg1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  object-fit: contain;
+}
+.main-combo .card-combo1 .card-combcontent1 {
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.main-combo .card-combo2 {
+  display: grid;
+  grid-row: 1/2;
+  grid-column: 5/6;
+  justify-content: center;
+  align-items: end;
+  max-width: 360px;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 10px black;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  margin-top: 5%;
+}
+.main-combo .card-combo2 .card-combimg2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  object-fit: contain;
+}
+.main-combo .card-combo2 .card-combcontent2 {
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.main-combo .card-combo3 {
+  display: grid;
+  grid-row: 2/3;
+  grid-column: 2/3;
+  justify-content: center;
+  align-items: end;
+  max-width: 360px;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 10px black;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+.main-combo .card-combo3 .card-combimg3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  object-fit: contain;
+}
+.main-combo .card-combo3 .card-combcontent3 {
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.main-combo .card-combo4 {
+  display: grid;
+  grid-row: 2/3;
+  grid-column: 5/6;
+  justify-content: center;
+  align-items: end;
+  max-width: 360px;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 10px black;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+.main-combo .card-combo4 .card-combimg4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  object-fit: contain;
+}
+.main-combo .card-combo4 .card-combcontent4 {
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.main-combo .card-combo5 {
+  display: grid;
+  grid-row: 3/4;
+  grid-column: 2/3;
+  justify-content: center;
+  align-items: end;
+  max-width: 360px;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 10px black;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+.main-combo .card-combo5 .card-combimg5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  object-fit: contain;
+}
+.main-combo .card-combo5 .card-combcontent5 {
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.main-combo .card-combo6 {
+  display: grid;
+  grid-row: 3/4;
+  grid-column: 5/6;
+  justify-content: center;
+  align-items: end;
+  max-width: 360px;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 10px black;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+.main-combo .card-combo6 .card-combimg6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  object-fit: contain;
+}
+.main-combo .card-combo6 .card-combcontent6 {
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.section-exp {
+  display: grid;
+  grid-row: 1/2;
+  grid-column: 2/5;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10%;
+}
+
+.section-form {
+  display: grid;
+  grid-row: 2/3;
+  grid-column: 2/3;
+}
+.section-form form {
+  width: 250%;
+  max-width: 800px;
+  margin: 0 auto;
+  font-weight: bold;
+}
+.section-form form label {
+  display: block;
+  margin-bottom: 25px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.section-form form input[type=text],
+.section-form form input[type=email],
+.section-form form textarea {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.section-form form button[type=submit] {
+  background-color: #000000;
+  color: #FF9494;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: #FFF5E4;
+  color: black;
+  gap: 15%;
+  font-family: "Montserrat", sans-serif;
+}
+footer .sectionFoin {
+  display: flex;
+  align-items: center;
+}
+footer .sectionFome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+footer .sectionFofi {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  header .nav {
+    grid-column: 1/3;
+  }
+}
+@media (max-width: 425px) {
+  header .nav {
+    grid-column: 2/5;
+  }
+  header .nav .navbarb {
+    gap: 6%;
+  }
+  header .nav .navbarb li {
+    font-size: 12px;
+  }
+  .main-index .sectionLogo {
+    grid-column: 4/5;
+  }
+  .main-index .sectionPrincipal {
+    grid-column: 2/6;
+    grid-row: 2/3;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+  }
+  .main-index .sectionPrincipal2 {
+    grid-column: 2/6;
+    grid-row: 3/4;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .main-prod .card-muffins {
+    display: grid;
+    grid-row: 4/5;
+    grid-column: 2/3;
+    justify-content: center;
+    align-items: end;
+    max-width: 360px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 10px black;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    margin-top: 5%;
+    margin-left: 5%;
+  }
+  .main-prod .card-muffins .card-img2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    margin: 0 auto;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-image: url(../assets/img/fondo-little.jpg);
-    color: black;
-    font-family: 'Montserrat', sans-serif;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-}
-
-/* ÉSTE ES EL INDEX */
-
-.strong {
-    color: #FFF5E4;
-    font-weight: bold
-}
-
-.sectionLogo {
-    display: grid;
-    grid-column: 4/6;
-    font-family: 'Montserrat', sans-serif;
+    height: auto;
+    margin-bottom: 10px;
+    object-fit: contain;
+  }
+  .main-prod .card-muffins .card-content2 {
     font-weight: bold;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.sectionPrincipal {
+    gap: 10px;
+  }
+  .main-prod .card-tortas {
     display: grid;
-    grid-column: 4/6;
-    grid-row: 2/3;
-    flex-direction: column;
-    justify-content: end;
+    grid-row: 1/2;
+    grid-column: 2/3;
+    justify-content: center;
     align-items: end;
-}
-
-.sectionPrincipal2 {
-    display: grid;
-    grid-column: 4/6;
-    grid-row: 3/4;
+    max-width: 360px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 10px black;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    margin-top: 5%;
+    margin-left: 5%;
+  }
+  .main-prod .card-tortas .card-img1 {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  .main-prod .card-tortas .card-content1 {
+    font-weight: bold;
+    display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-.sectionFinal {
+    align-items: center;
+    gap: 10px;
+  }
+  .main-prod .card-minitorta {
+    display: grid;
+    grid-row: 2/3;
+    grid-column: 2/3;
+    justify-content: center;
+    align-items: end;
+    max-width: 360px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 10px black;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    margin-left: 5%;
+  }
+  .main-prod .card-minitorta .card-img3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    object-fit: contain;
+  }
+  .main-prod .card-minitorta .card-content3 {
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .main-prod .card-macarons {
+    display: grid;
+    grid-row: 5/6;
+    grid-column: 2/3;
+    justify-content: center;
+    align-items: end;
+    max-width: 360px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 10px black;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    margin-left: 5%;
+  }
+  .main-prod .card-macarons .card-img4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    object-fit: contain;
+  }
+  .main-prod .card-macarons .card-content4 {
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .main-prod .card-facturas {
     display: grid;
     grid-row: 3/4;
-    grid-column: 5/7;
+    grid-column: 2/3;
+    justify-content: center;
+    align-items: end;
+    max-width: 360px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 10px black;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    margin-left: 5%;
+  }
+  .main-prod .card-facturas .card-img5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    object-fit: contain;
+  }
+  .main-prod .card-facturas .card-content5 {
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .main-prod .card-helado {
+    display: grid;
+    grid-row: 6/7;
+    grid-column: 2/3;
+    justify-content: center;
+    align-items: end;
+    max-width: 360px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 10px black;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    margin-left: 5%;
+  }
+  .main-prod .card-helado .card-img6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    object-fit: contain;
+  }
+  .main-prod .card-helado .card-content6 {
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .main-nos .info-nos {
+    display: grid;
+    grid-row: 1/2;
+    grid-column: 2/3;
+    justify-content: center;
+    align-items: center;
+    margin-top: -10%;
+  }
+  .main-nos .info-nos2 {
+    display: grid;
+    grid-row: 4/5;
+    grid-column: 1/3;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    margin-left: 5%;
+  }
+  .main-nos .img-nos {
+    display: grid;
+    grid-row: 2;
+    grid-column: 2/3;
+    margin-top: -30%;
+  }
+  .main-nos .img-nos2 {
+    display: grid;
+    grid-row: 3;
+    grid-column: 2/3;
+    margin-top: -10%;
+  }
+  footer .sectionFinal {
+    grid-row: 3/4;
+    grid-column: 4/7;
     font-size: 105%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.sectionFoin {
-    display: flex;
+  }
+  footer .sectionFoin {
     align-items: center;
-}
-
-.sectionFome {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-}
-
-
-.sectionFofi {
-    display: flex;
+    font-size: 70%;
+  }
+  footer .sectionFofi {
     justify-content: end;
     align-items: center;
+    font-size: 60%;
+  }
 }
-
-/* PÁGINA NOSOTROS  */
-
-.info-nos {
-    display: grid;
-    grid-row: 1;
-    grid-column: 3/5;
+@media (max-width: 320px) {
+  .hero {
+    max-width: 100%;
+  }
+  header .nav {
+    grid-column: 1/4;
+  }
+  header .nav .navbarb {
+    gap: 5%;
+  }
+  header .nav .navbarb li {
+    font-size: 13px;
+    padding-left: 4%;
+  }
+  footer .sectionFoin {
+    align-items: center;
+    font-size: 60%;
+  }
+  footer .sectionFome {
     justify-content: center;
     align-items: center;
-}
-
-.info-nos2 {
-    display: grid;
-    grid-row: 3/5;
+    gap: 10px;
+  }
+  footer .sectionFofi {
+    justify-content: center;
+    align-items: center;
+    font-size: 60%;
+  }
+  .main-index .sectionLogo {
+    grid-column: 3/6;
+  }
+  .main-index .sectionPrincipal {
     grid-column: 2/7;
-    justify-content: center;
-    align-items: center;
-}
-
-.img-nos {
-    display: grid;
-    grid-row: 2;
-    grid-column: 2/3;
-}
-
-.img-nos2 {
-    display: grid;
-    grid-row: 2;
+    grid-row: 2/3;
+    justify-content: start;
+    align-items: end;
+  }
+  .main-index .sectionPrincipal2 {
+    grid-column: 2/7;
+    grid-row: 3/4;
+  }
+  .main-index .sectionFinal {
     grid-column: 5/6;
-}
-
-/* ACÁ EMPIEZAN LAS CARD DE PRODUCTOS */
-
-.card-tortas {
+    justify-content: end;
+    align-items: end;
+  }
+  .main-prod .card-tortas {
     display: grid;
     grid-row: 1/2;
-    grid-column: 2/3;
+    grid-column: 1/2;
     justify-content: center;
     align-items: end;
-    max-width: 360px;
+    max-width: 300px;
     border: 1px solid #ccc;
     box-shadow: 2px 2px 10px black;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 10px;
     margin-top: 5%;
-}
-
-.card-img1 {
-    width: 100%;
+  }
+  .main-prod .card-tortas .card-img1 {
+    width: 50%;
     height: auto;
     margin-bottom: 10px;
-}
-
-
-.card-content1 {
+  }
+  .main-prod .card-tortas .card-content1 {
     font-weight: bold;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px
-}
-
-.card-muffins {
+    gap: 10px;
+  }
+  .main-prod .card-muffins {
     display: grid;
-    grid-row: 1/2;
-    grid-column: 5/6;
+    grid-row: 4/5;
+    grid-column: 1/2;
     justify-content: center;
     align-items: end;
-    max-width: 360px;
+    max-width: 300px;
     border: 1px solid #ccc;
     box-shadow: 2px 2px 10px black;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 10px;
     margin-top: 5%;
-}
-
-.card-img2 {
+  }
+  .main-prod .card-muffins .card-img2 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -250,186 +1010,30 @@ footer {
     height: auto;
     margin-bottom: 10px;
     object-fit: contain;
-
-}
-
-
-.card-content2 {
+  }
+  .main-prod .card-muffins .card-content2 {
     font-weight: bold;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px
-}
-
-.card-minitorta {
-
+    gap: 10px;
+  }
+  .main-prod .card-minitorta {
     display: grid;
     grid-row: 2/3;
-    grid-column: 2/3;
+    grid-column: 1/2;
     justify-content: center;
     align-items: end;
-    max-width: 360px;
-    border: 1px solid #ccc;
-    box-shadow: 2px 2px 10px black;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    ;
-
-}
-
-.card-img3 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-    object-fit: contain;
-
-}
-
-
-.card-content3 {
-    font-weight: bold;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px
-}
-
-.card-macarons {
-
-    display: grid;
-    grid-row: 2/3;
-    grid-column: 5/6;
-    justify-content: center;
-    align-items: end;
-    max-width: 360px;
-    border: 1px solid #ccc;
-    box-shadow: 2px 2px 10px black;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    ;
-
-}
-
-.card-img4 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-    object-fit: contain;
-
-}
-
-
-.card-content4 {
-    font-weight: bold;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px
-}
-
-.card-facturas {
-
-    display: grid;
-    grid-row: 3/4;
-    grid-column: 2/3;
-    justify-content: center;
-    align-items: end;
-    max-width: 360px;
-    border: 1px solid #ccc;
-    box-shadow: 2px 2px 10px black;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    ;
-
-}
-
-.card-img5 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-    object-fit: contain;
-
-}
-
-
-.card-content5 {
-    font-weight: bold;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px
-}
-
-.card-helado {
-    display: grid;
-    grid-row: 3/4;
-    grid-column: 5/6;
-    justify-content: center;
-    align-items: end;
-    max-width: 360px;
-    border: 1px solid #ccc;
-    box-shadow: 2px 2px 10px black;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    ;
-}
-
-.card-img6 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-    object-fit: contain;
-}
-
-
-.card-content6 {
-    font-weight: bold;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px
-}
-
-/* ACÁ EMPIEZAN LAS CARDS DE COMBOS */
-
-.card-combo1 {
-    display: grid;
-    grid-row: 1/2;
-    grid-column: 2/3;
-    justify-content: center;
-    align-items: end;
-    max-width: 360px;
+    max-width: 300px;
     border: 1px solid #ccc;
     box-shadow: 2px 2px 10px black;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 10px;
     margin-top: 5%;
-}
-
-.card-combimg1 {
+  }
+  .main-prod .card-minitorta .card-img3 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -437,34 +1041,30 @@ footer {
     height: auto;
     margin-bottom: 10px;
     object-fit: contain;
-}
-
-
-.card-combcontent1 {
+  }
+  .main-prod .card-minitorta .card-content3 {
     font-weight: bold;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px
-}
-
-.card-combo2 {
+    gap: 10px;
+  }
+  .main-prod .card-macarons {
     display: grid;
-    grid-row: 1/2;
-    grid-column: 5/6;
+    grid-row: 5/6;
+    grid-column: 1/2;
     justify-content: center;
     align-items: end;
-    max-width: 360px;
+    max-width: 300px;
     border: 1px solid #ccc;
     box-shadow: 2px 2px 10px black;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 10px;
     margin-top: 5%;
-}
-
-.card-combimg2 {
+  }
+  .main-prod .card-macarons .card-img4 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -472,104 +1072,30 @@ footer {
     height: auto;
     margin-bottom: 10px;
     object-fit: contain;
-}
-
-
-.card-combcontent2 {
+  }
+  .main-prod .card-macarons .card-content4 {
     font-weight: bold;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px
-}
-
-.card-combo3 {
-    display: grid;
-    grid-row: 2/3;
-    grid-column: 2/3;
-    justify-content: center;
-    align-items: end;
-    max-width: 360px;
-    border: 1px solid #ccc;
-    box-shadow: 2px 2px 10px black;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    ;
-}
-
-.card-combimg3 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-    object-fit: contain;
-}
-
-
-.card-combcontent3 {
-    font-weight: bold;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px
-}
-
-.card-combo4 {
-    display: grid;
-    grid-row: 2/3;
-    grid-column: 5/6;
-    justify-content: center;
-    align-items: end;
-    max-width: 360px;
-    border: 1px solid #ccc;
-    box-shadow: 2px 2px 10px black;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-
-}
-
-.card-combimg4 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-    object-fit: contain;
-}
-
-
-.card-combcontent4 {
-    font-weight: bold;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px
-}
-
-.card-combo5 {
+    gap: 10px;
+  }
+  .main-prod .card-facturas {
     display: grid;
     grid-row: 3/4;
-    grid-column: 2/3;
+    grid-column: 1/2;
     justify-content: center;
     align-items: end;
-    max-width: 360px;
+    max-width: 300px;
     border: 1px solid #ccc;
     box-shadow: 2px 2px 10px black;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 10px;
-
-}
-
-.card-combimg5 {
+    margin-top: 5%;
+  }
+  .main-prod .card-facturas .card-img5 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -577,34 +1103,30 @@ footer {
     height: auto;
     margin-bottom: 10px;
     object-fit: contain;
-}
-
-
-.card-combcontent5 {
+  }
+  .main-prod .card-facturas .card-content5 {
     font-weight: bold;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px
-}
-
-.card-combo6 {
+    gap: 10px;
+  }
+  .main-prod .card-helado {
     display: grid;
-    grid-row: 3/4;
-    grid-column: 5/6;
+    grid-row: 6/7;
+    grid-column: 1/2;
     justify-content: center;
     align-items: end;
-    max-width: 360px;
+    max-width: 300px;
     border: 1px solid #ccc;
     box-shadow: 2px 2px 10px black;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 10px;
-
-}
-
-.card-combimg6 {
+    margin-top: 5%;
+  }
+  .main-prod .card-helado .card-img6 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -612,654 +1134,15 @@ footer {
     height: auto;
     margin-bottom: 10px;
     object-fit: contain;
-}
-
-
-.card-combcontent6 {
+  }
+  .main-prod .card-helado .card-content6 {
     font-weight: bold;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px
+    gap: 10px;
+  }
 }
 
-/* FORM DELIVERY */
-
-.section-form {
-    display: grid;
-    grid-row: 2/3;
-    grid-column: 2/3;
-
-}
-
-form {
-    width: 250%;
-    max-width: 800px;
-    margin: 0 auto;
-    font-weight: bold;
-}
-
-label {
-    display: block;
-    margin-bottom: 25px;
-    font-weight: bold;
-    margin-top: 10px;
-
-}
-
-input,
-textarea {
-    width: 100%;
-    padding: 15px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    font-weight: bold;
-}
-
-.section-exp {
-    display: grid;
-    grid-row: 1/2;
-    grid-column: 1/6;
-    justify-content: center;
-    align-items: center;
-    margin-left: 10%;
-}
-
-
-@media(max-width:425px) {
-
-
-    .nav {
-        grid-column: 2/5;
-    }
-
-    .navbarb {
-        gap: 6%;
-    }
-
-
-
-    .navbarb li {
-        font-size: 12px;
-    }
-
-    .sectionLogo {
-        grid-column: 4/5;
-
-
-    }
-
-    .sectionPrincipal {
-        grid-column: 2/6;
-        grid-row: 2/3;
-        flex-direction: column;
-        justify-content: center;
-        align-items: end;
-    }
-
-    .sectionPrincipal2 {
-
-        grid-column: 2/6;
-        grid-row: 3/4;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .sectionFinal {
-        grid-row: 3/4;
-        grid-column: 4/7;
-        font-size: 105%;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .sectionFoin {
-        align-items: center;
-        font-size: 70%;
-    }
-
-    .sectionFome {
-        justify-content: center;
-        align-items: center;
-
-    }
-
-
-    .sectionFofi {
-        justify-content: end;
-        align-items: center;
-        font-size: 60%;
-    }
-
-    .card-tortas {
-        display: grid;
-        grid-row: 1/2;
-        grid-column: 2/3;
-        justify-content: center;
-        align-items: end;
-        max-width: 360px;
-        border: 1px solid #ccc;
-        box-shadow: 2px 2px 10px black;
-        padding: 20px;
-        margin-bottom: 20px;
-        border-radius: 10px;
-        margin-top: 5%;
-    }
-
-    .card-img1 {
-        width: 100%;
-        height: auto;
-        margin-bottom: 10px;
-    }
-
-
-    .card-content1 {
-        font-weight: bold;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 10px
-    }
-
-    .card-muffins {
-        display: grid;
-        grid-row: 4/5;
-        grid-column: 2/3;
-        justify-content: center;
-        align-items: end;
-        max-width: 360px;
-        border: 1px solid #ccc;
-        box-shadow: 2px 2px 10px black;
-        padding: 20px;
-        margin-bottom: 20px;
-        border-radius: 10px;
-        margin-top: 5%;
-    }
-
-    .card-img2 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: auto;
-        margin-bottom: 10px;
-        object-fit: contain;
-
-    }
-
-
-    .card-content2 {
-        font-weight: bold;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 10px
-    }
-
-    .card-minitorta {
-
-        display: grid;
-        grid-row: 2/3;
-        grid-column: 2/3;
-        justify-content: center;
-        align-items: end;
-        max-width: 360px;
-        border: 1px solid #ccc;
-        box-shadow: 2px 2px 10px black;
-        padding: 20px;
-        margin-bottom: 20px;
-        border-radius: 10px;
-        ;
-
-    }
-
-    .card-img3 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: auto;
-        margin-bottom: 10px;
-        object-fit: contain;
-
-    }
-
-
-    .card-content3 {
-        font-weight: bold;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 10px
-    }
-
-    .card-macarons {
-
-        display: grid;
-        grid-row: 5/6;
-        grid-column: 2/3;
-        justify-content: center;
-        align-items: end;
-        max-width: 360px;
-        border: 1px solid #ccc;
-        box-shadow: 2px 2px 10px black;
-        padding: 20px;
-        margin-bottom: 20px;
-        border-radius: 10px;
-        ;
-
-    }
-
-    .card-img4 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: auto;
-        margin-bottom: 10px;
-        object-fit: contain;
-
-    }
-
-
-    .card-content4 {
-        font-weight: bold;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 10px
-    }
-
-    .card-facturas {
-
-        display: grid;
-        grid-row: 3/4;
-        grid-column: 2/3;
-        justify-content: center;
-        align-items: end;
-        max-width: 360px;
-        border: 1px solid #ccc;
-        box-shadow: 2px 2px 10px black;
-        padding: 20px;
-        margin-bottom: 20px;
-        border-radius: 10px;
-        ;
-
-    }
-
-    .card-img5 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: auto;
-        margin-bottom: 10px;
-        object-fit: contain;
-
-    }
-
-
-    .card-content5 {
-        font-weight: bold;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 10px
-    }
-
-    .card-helado {
-        display: grid;
-        grid-row: 6/7;
-        grid-column: 2/3;
-        justify-content: center;
-        align-items: end;
-        max-width: 360px;
-        border: 1px solid #ccc;
-        box-shadow: 2px 2px 10px black;
-        padding: 20px;
-        margin-bottom: 20px;
-        border-radius: 10px;
-        ;
-    }
-
-    .card-img6 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: auto;
-        margin-bottom: 10px;
-        object-fit: contain;
-    }
-
-
-    .card-content6 {
-        font-weight: bold;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 10px
-    }
-
-
-    .info-nos {
-        display: grid;
-        grid-row: 1/2;
-        grid-column: 2/3;
-        justify-content: center;
-        align-items: center;
-        margin-top: -10%;
-    }
-
-    .info-nos2 {
-        display: grid;
-        grid-row: 4/5;
-        grid-column: 1/3;
-        justify-content: center;
-        align-items: center;
-        margin-top: 5%;
-        margin-left: 5%;
-    }
-
-    .img-nos {
-        display: grid;
-        grid-row: 2;
-        grid-column: 2/3;
-        margin-top: -30%;
-    }
-
-    .img-nos2 {
-        display: grid;
-        grid-row: 3;
-        grid-column: 2/3;
-        margin-top: -10%;
-    }
-}
-
-@media(max-width:320px) {
-    .hero {
-        max-width: 100%;
-    }
-
-    .nav {
-        grid-column: 1/4;
-    }
-
-    .navbarb {
-        gap: 5%;
-    }
-
-    .navbarb li {
-
-        font-size: 13px;
-        padding-left: 6%;
-    }
-
-    .sectionLogo{
-        grid-column:3/6;
-    }
-    .sectionPrincipal {
-        grid-column: 2/7;
-        grid-row: 2/3;
-        justify-content: start;
-        align-items: end;
-    }
-
-    .sectionPrincipal2 {
-        grid-column: 2/7;
-        grid-row: 3/4;
-    }
-
-    .sectionFinal {
-        grid-column: 5/6;
-        justify-content: end;
-        align-items: end;
-
-    }
-
-    .sectionFoin {
-        align-items: center;
-        font-size: 60%;
-    }
-
-    .sectionFome {
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-    }
-
-    .sectionFofi {
-        justify-content: center;
-        align-items: center;
-        font-size: 60%;
-    }
-
-    
-    .card-tortas {
-        display: grid;
-        grid-row: 1/2;
-        grid-column: 1/2;
-        justify-content: center;
-        align-items: end;
-        max-width: 300px;
-        border: 1px solid #ccc;
-        box-shadow: 2px 2px 10px black;
-        padding: 20px;
-        margin-bottom: 20px;
-        border-radius: 10px;
-        margin-top: 5%;
-        margin-left: 5%;
-    }
-
-    .card-img1 {
-        width: 50%;
-        height: auto;
-        margin-bottom: 10px;
-    }
-   
-    .card-content1 {
-        font-weight: bold;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 10px
-    }
-    .card-muffins {
-        display: grid;
-        grid-row: 4/5;
-        grid-column: 1/2;
-        justify-content: center;
-        align-items: end;
-        max-width: 300px;
-        border: 1px solid #ccc;
-        box-shadow: 2px 2px 10px black;
-        padding: 20px;
-        margin-bottom: 20px;
-        border-radius: 10px;
-        margin-top: 5%;
-        margin-left: 5%;
-    }
-
-    .card-img2 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: auto;
-        margin-bottom: 10px;
-        object-fit: contain;
-
-    }
-
-
-    .card-content2 {
-        font-weight: bold;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 10px
-    }
-
-    .card-minitorta {
-
-        display: grid;
-        grid-row: 2/3;
-        grid-column: 1/2;
-        justify-content: center;
-        align-items: end;
-        max-width: 300px;
-        border: 1px solid #ccc;
-        box-shadow: 2px 2px 10px black;
-        padding: 20px;
-        margin-bottom: 20px;
-        border-radius: 10px;
-        margin-top: 5%;
-        margin-left: 5%;
-
-    }
-
-    .card-img3 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: auto;
-        margin-bottom: 10px;
-        object-fit: contain;
-
-    }
-
-
-    .card-content3 {
-        font-weight: bold;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 10px
-    }
-
-    .card-macarons {
-
-        display: grid;
-        grid-row: 5/6;
-        grid-column: 1/2;
-        justify-content: center;
-        align-items: end;
-        max-width: 300px;
-        border: 1px solid #ccc;
-        box-shadow: 2px 2px 10px black;
-        padding: 20px;
-        margin-bottom: 20px;
-        border-radius: 10px;
-        margin-top: 5%;
-        margin-left: 5%;
-
-    }
-
-    .card-img4 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: auto;
-        margin-bottom: 10px;
-        object-fit: contain;
-
-    }
-
-
-    .card-content4 {
-        font-weight: bold;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 10px
-    }
-
-    .card-facturas {
-
-        display: grid;
-        grid-row: 3/4;
-        grid-column: 1/2;
-        justify-content: center;
-        align-items: end;
-        max-width: 300px;
-        border: 1px solid #ccc;
-        box-shadow: 2px 2px 10px black;
-        padding: 20px;
-        margin-bottom: 20px;
-        border-radius: 10px;
-        margin-top: 5%;
-        margin-left: 5%;
-
-    }
-
-    .card-img5 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: auto;
-        margin-bottom: 10px;
-        object-fit: contain;
-
-    }
-
-
-    .card-content5 {
-        font-weight: bold;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 10px
-    }
-
-    .card-helado {
-        display: grid;
-        grid-row: 6/7;
-        grid-column: 1/2;
-        justify-content: center;
-        align-items: end;
-        max-width: 300px;
-        border: 1px solid #ccc;
-        box-shadow: 2px 2px 10px black;
-        padding: 20px;
-        margin-bottom: 20px;
-        border-radius: 10px;
-        margin-top: 5%;
-        margin-left: 5%;
-    }
-
-    .card-img6 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: auto;
-        margin-bottom: 10px;
-        object-fit: contain;
-    }
-
-
-    .card-content6 {
-        font-weight: bold;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 10px
-    }
-}
+/*# sourceMappingURL=style.css.map */

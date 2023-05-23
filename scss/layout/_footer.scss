@@ -1,0 +1,23 @@
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #FFF5E4;
+    color: black;
+    gap: 15%;
+    font-family: 'Montserrat', sans-serif;
+    .sectionFoin {
+        display: flex;
+        align-items: center;
+    }
+    .sectionFome {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    .sectionFofi {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+}
