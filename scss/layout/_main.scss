@@ -69,6 +69,7 @@
         grid-column: 3/5;
         justify-content: center;
         align-items: center;
+        
     }
 
     .info-nos2 {
@@ -77,12 +78,15 @@
         grid-column: 2/7;
         justify-content: center;
         align-items: center;
+        padding-top: 15px;
+    
     }
 
     .img-nos {
         display: grid;
         grid-row: 2;
         grid-column: 2/3;
+            
     }
 
     .img-nos2 {
@@ -123,23 +127,23 @@
             gap: 10px
         }
 
-        animation-name: cardEntrance;
-        animation-duration: 1s;
-        animation-timing-function: ease-in-out;
-        animation-fill-mode: forwards;
-      }
+        // animation-name: cardEntrance;
+        // animation-duration: 1s;
+        // animation-timing-function: ease-in-out;
+        // animation-fill-mode: forwards;
+        // @keyframes cardEntrance {
+        //     0% {
+        //       opacity: 0;
+        //       transform: translateY(50px);
+        //     }
+          
+        //     100% {
+        //       opacity: 1;
+        //       transform: translateY(0);
+        //     }
+        //   }
+      }     
       
-      @keyframes cardEntrance {
-        0% {
-          opacity: 0;
-          transform: translateY(50px);
-        }
-      
-        100% {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
     }
 
     .card-muffins {
@@ -174,23 +178,23 @@
             align-items: center;
             gap: 10px
         }
-        animation-name: cardEntrance;
-        animation-duration: 1s;
-        animation-timing-function: ease-in-out;
-        animation-fill-mode: forwards;
-      }
+        // animation-name: cardEntrance;
+        // animation-duration: 1s;
+        // animation-timing-function: ease-in-out;
+        // animation-fill-mode: forwards;
+        // @keyframes cardEntrance {
+        //     0% {
+        //       opacity: 0;
+        //       transform: translateY(50px);
+        //     }
+          
+        //     100% {
+        //       opacity: 1;
+        //       transform: translateY(0);
+        //     }
+        //   }
+      }       
       
-      @keyframes cardEntrance {
-        0% {
-          opacity: 0;
-          transform: translateY(50px);
-        }
-      
-        100% {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
     
 
     .card-minitorta {
@@ -230,18 +234,18 @@
         animation-duration: 1s;
         animation-timing-function: ease-in-out;
         animation-fill-mode: forwards;
-      }
+        @keyframes cardEntrance {
+            0% {
+              opacity: 0;
+              transform: translateY(50px);
+            }
+          
+            100% {
+              opacity: 1;
+              transform: translateY(0);
+            }
+      }      
       
-      @keyframes cardEntrance {
-        0% {
-          opacity: 0;
-          transform: translateY(50px);
-        }
-      
-        100% {
-          opacity: 1;
-          transform: translateY(0);
-        }
       }
 
     .card-macarons {
@@ -281,8 +285,7 @@
         animation-duration: 1s;
         animation-timing-function: ease-in-out;
         animation-fill-mode: forwards;
-      }
-      
+          
       @keyframes cardEntrance {
         0% {
           opacity: 0;
@@ -294,6 +297,8 @@
           transform: translateY(0);
         }
       }
+      }
+    
     
 
     .card-facturas {
@@ -333,19 +338,19 @@
         animation-duration: 1s;
         animation-timing-function: ease-in-out;
         animation-fill-mode: forwards;
+        @keyframes cardEntrance {
+            0% {
+              opacity: 0;
+              transform: translateY(50px);
+            }
+          
+            100% {
+              opacity: 1;
+              transform: translateY(0);
+            }
+          }
       }
-      
-      @keyframes cardEntrance {
-        0% {
-          opacity: 0;
-          transform: translateY(50px);
-        }
-      
-        100% {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
+           
     
 
     .card-helado {
@@ -384,19 +389,18 @@
         animation-duration: 1s;
         animation-timing-function: ease-in-out;
         animation-fill-mode: forwards;
-      }
-      
-      @keyframes cardEntrance {
-        0% {
-          opacity: 0;
-          transform: translateY(50px);
-        }
-      
-        100% {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
+        @keyframes cardEntrance {
+            0% {
+              opacity: 0;
+              transform: translateY(50px);
+            }
+          
+            100% {
+              opacity: 1;
+              transform: translateY(0);
+            }
+          }        
+      }     
     
 
 .main-combo {
@@ -602,6 +606,7 @@
     }
 }
 
+.main-deli{
 .section-exp {
     display: grid;
     grid-row: 1/2;
@@ -651,4 +656,5 @@
             font-size: 14px;
         }
     }
+}
 }

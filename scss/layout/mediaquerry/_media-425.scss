@@ -1,5 +1,9 @@
 @media(max-width:425px) {
     header {
+        .navbar{
+            
+            font-size: 20px;
+}
         .nav {
             grid-column: 2/5;
 
@@ -295,7 +299,7 @@
         .sectionFofi {
             justify-content: end;
             align-items: center;
-            font-size: 60%;
+            font-size: 10px;
         }
     }
 }

@@ -25,13 +25,20 @@ header {
 header .nav {
   grid-column: 4/9;
 }
-header .nav .navbarb {
+header .navbar {
+  --bs-navbar-padding-y: 0.0rem;
+  font-size: 35px;
+}
+header .navbar .container-fluid {
+  background-color: #FFF5E4;
+}
+header .navbarb {
   display: flex;
   flex-direction: row;
   gap: 5px;
   list-style-type: none;
 }
-header .nav .navbarb li {
+header .navbarb li {
   display: inline-block;
   text-decoration: none;
   list-style: none;
@@ -40,12 +47,15 @@ header .nav .navbarb li {
   color: black;
   font-family: "Montserrat", sans-serif;
 }
-header .nav .navbarb li a {
+header .navbarb a {
   text-decoration: none;
   list-style: none;
   font-weight: 800;
   color: black;
   font-weight: bold;
+}
+header .navbarb a .nav-link {
+  font-size: 30px;
 }
 
 .main-index,
@@ -119,6 +129,7 @@ header .nav .navbarb li a {
   grid-column: 2/7;
   justify-content: center;
   align-items: center;
+  padding-top: 15px;
 }
 .main-nos .img-nos {
   display: grid;
@@ -144,10 +155,6 @@ header .nav .navbarb li a {
   margin-bottom: 20px;
   border-radius: 10px;
   margin-top: 5%;
-  animation-name: cardEntrance;
-  animation-duration: 1s;
-  animation-timing-function: ease-in-out;
-  animation-fill-mode: forwards;
 }
 .main-prod .card-tortas .card-img1 {
   width: 100%;
@@ -161,16 +168,6 @@ header .nav .navbarb li a {
   justify-content: center;
   align-items: center;
   gap: 10px;
-}
-@keyframes cardEntrance {
-  0% {
-    opacity: 0;
-    transform: translateY(50px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 .card-muffins {
@@ -186,10 +183,6 @@ header .nav .navbarb li a {
   margin-bottom: 20px;
   border-radius: 10px;
   margin-top: 5%;
-  animation-name: cardEntrance;
-  animation-duration: 1s;
-  animation-timing-function: ease-in-out;
-  animation-fill-mode: forwards;
 }
 .card-muffins .card-img2 {
   display: flex;
@@ -209,16 +202,6 @@ header .nav .navbarb li a {
   gap: 10px;
 }
 
-@keyframes cardEntrance {
-  0% {
-    opacity: 0;
-    transform: translateY(50px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 .card-minitorta {
   display: grid;
   grid-row: 2/3;
@@ -253,7 +236,6 @@ header .nav .navbarb li a {
   align-items: center;
   gap: 10px;
 }
-
 @keyframes cardEntrance {
   0% {
     opacity: 0;
@@ -264,6 +246,7 @@ header .nav .navbarb li a {
     transform: translateY(0);
   }
 }
+
 .card-macarons {
   display: grid;
   grid-row: 2/3;
@@ -298,7 +281,6 @@ header .nav .navbarb li a {
   align-items: center;
   gap: 10px;
 }
-
 @keyframes cardEntrance {
   0% {
     opacity: 0;
@@ -309,6 +291,7 @@ header .nav .navbarb li a {
     transform: translateY(0);
   }
 }
+
 .card-facturas {
   display: grid;
   grid-row: 3/4;
@@ -343,7 +326,6 @@ header .nav .navbarb li a {
   align-items: center;
   gap: 10px;
 }
-
 @keyframes cardEntrance {
   0% {
     opacity: 0;
@@ -354,6 +336,7 @@ header .nav .navbarb li a {
     transform: translateY(0);
   }
 }
+
 .card-helado {
   display: grid;
   grid-row: 3/4;
@@ -388,7 +371,6 @@ header .nav .navbarb li a {
   align-items: center;
   gap: 10px;
 }
-
 @keyframes cardEntrance {
   0% {
     opacity: 0;
@@ -399,6 +381,7 @@ header .nav .navbarb li a {
     transform: translateY(0);
   }
 }
+
 .main-combo .card-combo1 {
   display: grid;
   grid-row: 1/2;
@@ -582,7 +565,7 @@ header .nav .navbarb li a {
   gap: 10px;
 }
 
-.section-exp {
+.main-deli .section-exp {
   display: grid;
   grid-row: 1/2;
   grid-column: 2/5;
@@ -590,27 +573,26 @@ header .nav .navbarb li a {
   align-items: center;
   margin-left: 10%;
 }
-
-.section-form {
+.main-deli .section-form {
   display: grid;
   grid-row: 2/3;
   grid-column: 2/3;
 }
-.section-form form {
+.main-deli .section-form form {
   width: 250%;
   max-width: 800px;
   margin: 0 auto;
   font-weight: bold;
 }
-.section-form form label {
+.main-deli .section-form form label {
   display: block;
   margin-bottom: 25px;
   font-weight: bold;
   margin-top: 10px;
 }
-.section-form form input[type=text],
-.section-form form input[type=email],
-.section-form form textarea {
+.main-deli .section-form form input[type=text],
+.main-deli .section-form form input[type=email],
+.main-deli .section-form form textarea {
   width: 100%;
   padding: 5px;
   margin-bottom: 10px;
@@ -619,7 +601,7 @@ header .nav .navbarb li a {
   box-sizing: border-box;
   font-size: 14px;
 }
-.section-form form button[type=submit] {
+.main-deli .section-form form button[type=submit] {
   background-color: #000000;
   color: #FF9494;
   padding: 10px 15px;
@@ -653,12 +635,43 @@ footer .sectionFofi {
   align-items: center;
 }
 
+.navbar {
+  --bs-navbar-padding-y: 0.0rem;
+}
+.navbar .container-fluid {
+  background-color: #FFF5E4;
+}
+
 @media (max-width: 768px) {
   header .nav {
     grid-column: 1/3;
   }
+  header .nav .navbarb {
+    flex-direction: column;
+    list-style: none;
+  }
+  header .nav ul {
+    position: absolute;
+    width: 100%;
+    height: 210px;
+    top: 80px;
+    left: -105%;
+    text-align: center;
+  }
+  header .nav ul li {
+    display: block;
+    margin: 10px 0;
+    line-height: 20px;
+  }
+  header .nav ul li a {
+    font-size: 20px;
+    color: #000;
+  }
 }
 @media (max-width: 425px) {
+  header .navbar {
+    font-size: 20px;
+  }
   header .nav {
     grid-column: 2/5;
   }
@@ -912,7 +925,7 @@ footer .sectionFofi {
   footer .sectionFofi {
     justify-content: end;
     align-items: center;
-    font-size: 60%;
+    font-size: 10px;
   }
 }
 @media (max-width: 320px) {
@@ -941,7 +954,6 @@ footer .sectionFofi {
   footer .sectionFofi {
     justify-content: center;
     align-items: center;
-    font-size: 60%;
   }
   .main-index .sectionLogo {
     grid-column: 3/6;
