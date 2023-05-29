@@ -4,6 +4,16 @@
     }
 
     header {
+        .navbar {
+            --bs-navbar-padding-y: 0.0rem;
+            font-size: 20px;
+
+            .container-fluid {
+                background-color: #FFF5E4;
+
+            }
+        }
+
         .nav {
             grid-column: 1/4;
 
@@ -34,7 +44,7 @@
         .sectionFofi {
             justify-content: center;
             align-items: center;
-           
+
         }
     }
 

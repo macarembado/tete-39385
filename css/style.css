@@ -643,6 +643,13 @@ footer .sectionFofi {
 }
 
 @media (max-width: 768px) {
+  header .navbar {
+    --bs-navbar-padding-y: 0.0rem;
+    font-size: 25px;
+  }
+  header .navbar .container-fluid {
+    background-color: #FFF5E4;
+  }
   header .nav {
     grid-column: 1/3;
   }
@@ -669,6 +676,13 @@ footer .sectionFofi {
   }
 }
 @media (max-width: 425px) {
+  header .navbar {
+    --bs-navbar-padding-y: 0.0rem;
+    font-size: 20px;
+  }
+  header .navbar .container-fluid {
+    background-color: #FFF5E4;
+  }
   header .navbar {
     font-size: 20px;
   }
@@ -931,6 +945,13 @@ footer .sectionFofi {
 @media (max-width: 320px) {
   .hero {
     max-width: 100%;
+  }
+  header .navbar {
+    --bs-navbar-padding-y: 0.0rem;
+    font-size: 20px;
+  }
+  header .navbar .container-fluid {
+    background-color: #FFF5E4;
   }
   header .nav {
     grid-column: 1/4;

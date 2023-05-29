@@ -1,5 +1,13 @@
 @media(max-width:768px) {
     header {
+        .navbar{
+            --bs-navbar-padding-y: 0.0rem;
+            font-size: 25px;
+            .container-fluid{
+                background-color:#FFF5E4;        
+            
+            }
+            }
         
         .nav {
             grid-column: 1/3;

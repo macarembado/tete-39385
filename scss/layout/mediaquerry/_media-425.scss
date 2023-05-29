@@ -1,6 +1,14 @@
 @media(max-width:425px) {
     header {
         .navbar{
+            --bs-navbar-padding-y: 0.0rem;
+            font-size: 20px;
+            .container-fluid{
+                background-color:#FFF5E4;        
+            
+            }
+            }
+        .navbar{
             
             font-size: 20px;
 }
