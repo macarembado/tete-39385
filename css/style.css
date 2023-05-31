@@ -185,13 +185,11 @@ header .navbarb a .nav-link {
   margin-top: 5%;
 }
 .card-muffins .card-img2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 100%;
   height: auto;
   margin-bottom: 10px;
-  object-fit: contain;
+  margin-left: 15px;
+  margin-top: -25px;
 }
 .card-muffins .card-content2 {
   font-weight: bold;
@@ -622,6 +620,7 @@ footer {
 footer .sectionFoin {
   display: flex;
   align-items: center;
+  padding-left: 5px;
 }
 footer .sectionFome {
   display: flex;
@@ -644,7 +643,6 @@ footer .sectionFofi {
 
 @media (max-width: 768px) {
   header .navbar {
-    --bs-navbar-padding-y: 0.0rem;
     font-size: 25px;
   }
   header .navbar .container-fluid {
@@ -675,9 +673,8 @@ footer .sectionFofi {
     color: #000;
   }
 }
-@media (max-width: 425px) {
+@media (max-width: 625px) {
   header .navbar {
-    --bs-navbar-padding-y: 0.0rem;
     font-size: 20px;
   }
   header .navbar .container-fluid {
@@ -901,7 +898,7 @@ footer .sectionFofi {
     grid-column: 2/3;
     justify-content: center;
     align-items: center;
-    margin-top: -10%;
+    margin-top: -40px;
   }
   .main-nos .info-nos2 {
     display: grid;
@@ -909,8 +906,8 @@ footer .sectionFofi {
     grid-column: 1/3;
     justify-content: center;
     align-items: center;
-    margin-top: 5%;
-    margin-left: 5%;
+    margin-left: 30px;
+    margin-top: -150px;
   }
   .main-nos .img-nos {
     display: grid;
@@ -919,10 +916,635 @@ footer .sectionFofi {
     margin-top: -30%;
   }
   .main-nos .img-nos2 {
+    display: none;
+  }
+  .main-combo .card-combo1 {
     display: grid;
-    grid-row: 3;
+    grid-row: 1/2;
     grid-column: 2/3;
-    margin-top: -10%;
+    justify-content: center;
+    align-items: end;
+    max-width: 360px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 10px black;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    margin-top: 5%;
+  }
+  .main-combo .card-combo1 .card-combimg1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    object-fit: contain;
+  }
+  .main-combo .card-combo1 .card-combcontent1 {
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .main-combo .card-combo2 {
+    display: grid;
+    grid-row: 4/5;
+    grid-column: 2/3;
+    justify-content: center;
+    align-items: end;
+    max-width: 360px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 10px black;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    margin-top: 5%;
+  }
+  .main-combo .card-combo2 .card-combimg2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    object-fit: contain;
+  }
+  .main-combo .card-combo2 .card-combcontent2 {
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .main-combo .card-combo3 {
+    display: grid;
+    grid-row: 2/3;
+    grid-column: 2/3;
+    justify-content: center;
+    align-items: end;
+    max-width: 360px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 10px black;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+  }
+  .main-combo .card-combo3 .card-combimg3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    object-fit: contain;
+  }
+  .main-combo .card-combo3 .card-combcontent3 {
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .main-combo .card-combo4 {
+    display: grid;
+    grid-row: 5/6;
+    grid-column: 2/3;
+    justify-content: center;
+    align-items: end;
+    max-width: 360px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 10px black;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+  }
+  .main-combo .card-combo4 .card-combimg4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    object-fit: contain;
+  }
+  .main-combo .card-combo4 .card-combcontent4 {
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .main-combo .card-combo5 {
+    display: grid;
+    grid-row: 3/4;
+    grid-column: 2/3;
+    justify-content: center;
+    align-items: end;
+    max-width: 360px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 10px black;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+  }
+  .main-combo .card-combo5 .card-combimg5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    object-fit: contain;
+  }
+  .main-combo .card-combo5 .card-combcontent5 {
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .main-combo .card-combo6 {
+    display: grid;
+    grid-row: 6/7;
+    grid-column: 2/3;
+    justify-content: center;
+    align-items: end;
+    max-width: 360px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 10px black;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+  }
+  .main-combo .card-combo6 .card-combimg6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    object-fit: contain;
+  }
+  .main-combo .card-combo6 .card-combcontent6 {
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  footer .sectionFinal {
+    grid-row: 3/4;
+    grid-column: 4/7;
+    font-size: 105%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .sectionFoin {
+    align-items: center;
+    font-size: 70%;
+  }
+  footer .sectionFofi {
+    justify-content: end;
+    align-items: center;
+    font-size: 10px;
+    padding-left: -25px;
+  }
+}
+@media (max-width: 425px) {
+  header .navbar {
+    font-size: 20px;
+  }
+  header .navbar .container-fluid {
+    background-color: #FFF5E4;
+  }
+  header .navbar {
+    font-size: 20px;
+  }
+  header .nav {
+    grid-column: 2/5;
+  }
+  header .nav .navbarb {
+    gap: 6%;
+  }
+  header .nav .navbarb li {
+    font-size: 12px;
+  }
+  .main-index .sectionLogo {
+    grid-column: 4/5;
+  }
+  .main-index .sectionPrincipal {
+    grid-column: 2/6;
+    grid-row: 2/3;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+  }
+  .main-index .sectionPrincipal2 {
+    grid-column: 2/6;
+    grid-row: 3/4;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .main-prod .card-muffins {
+    display: grid;
+    grid-row: 4/5;
+    grid-column: 2/3;
+    justify-content: center;
+    align-items: end;
+    max-width: 360px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 10px black;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    margin-top: 5%;
+    margin-left: 5%;
+  }
+  .main-prod .card-muffins .card-img2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    object-fit: contain;
+  }
+  .main-prod .card-muffins .card-content2 {
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .main-prod .card-tortas {
+    display: grid;
+    grid-row: 1/2;
+    grid-column: 2/3;
+    justify-content: center;
+    align-items: end;
+    max-width: 360px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 10px black;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    margin-top: 5%;
+    margin-left: 5%;
+  }
+  .main-prod .card-tortas .card-img1 {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  .main-prod .card-tortas .card-content1 {
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .main-prod .card-minitorta {
+    display: grid;
+    grid-row: 2/3;
+    grid-column: 2/3;
+    justify-content: center;
+    align-items: end;
+    max-width: 360px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 10px black;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    margin-left: 5%;
+  }
+  .main-prod .card-minitorta .card-img3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    object-fit: contain;
+  }
+  .main-prod .card-minitorta .card-content3 {
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .main-prod .card-macarons {
+    display: grid;
+    grid-row: 5/6;
+    grid-column: 2/3;
+    justify-content: center;
+    align-items: end;
+    max-width: 360px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 10px black;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    margin-left: 5%;
+  }
+  .main-prod .card-macarons .card-img4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    object-fit: contain;
+  }
+  .main-prod .card-macarons .card-content4 {
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .main-prod .card-facturas {
+    display: grid;
+    grid-row: 3/4;
+    grid-column: 2/3;
+    justify-content: center;
+    align-items: end;
+    max-width: 360px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 10px black;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    margin-left: 5%;
+  }
+  .main-prod .card-facturas .card-img5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    object-fit: contain;
+  }
+  .main-prod .card-facturas .card-content5 {
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .main-prod .card-helado {
+    display: grid;
+    grid-row: 6/7;
+    grid-column: 2/3;
+    justify-content: center;
+    align-items: end;
+    max-width: 360px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 10px black;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    margin-left: 5%;
+  }
+  .main-prod .card-helado .card-img6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    object-fit: contain;
+  }
+  .main-prod .card-helado .card-content6 {
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .main-nos .info-nos {
+    display: grid;
+    grid-row: 1/2;
+    grid-column: 2/3;
+    justify-content: center;
+    align-items: center;
+    margin-top: -40px;
+  }
+  .main-nos .info-nos2 {
+    display: grid;
+    grid-row: 4/5;
+    grid-column: 1/3;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+    margin-top: -150px;
+  }
+  .main-nos .img-nos {
+    display: grid;
+    grid-row: 2;
+    grid-column: 2/3;
+    margin-top: -30%;
+  }
+  .main-nos .img-nos2 {
+    display: none;
+  }
+  .main-combo .card-combo1 {
+    display: grid;
+    grid-row: 1/2;
+    grid-column: 2/3;
+    justify-content: center;
+    align-items: end;
+    max-width: 360px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 10px black;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    margin-top: 5%;
+  }
+  .main-combo .card-combo1 .card-combimg1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    object-fit: contain;
+  }
+  .main-combo .card-combo1 .card-combcontent1 {
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .main-combo .card-combo2 {
+    display: grid;
+    grid-row: 4/5;
+    grid-column: 2/3;
+    justify-content: center;
+    align-items: end;
+    max-width: 360px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 10px black;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    margin-top: 5%;
+  }
+  .main-combo .card-combo2 .card-combimg2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    object-fit: contain;
+  }
+  .main-combo .card-combo2 .card-combcontent2 {
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .main-combo .card-combo3 {
+    display: grid;
+    grid-row: 2/3;
+    grid-column: 2/3;
+    justify-content: center;
+    align-items: end;
+    max-width: 360px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 10px black;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+  }
+  .main-combo .card-combo3 .card-combimg3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    object-fit: contain;
+  }
+  .main-combo .card-combo3 .card-combcontent3 {
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .main-combo .card-combo4 {
+    display: grid;
+    grid-row: 5/6;
+    grid-column: 2/3;
+    justify-content: center;
+    align-items: end;
+    max-width: 360px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 10px black;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+  }
+  .main-combo .card-combo4 .card-combimg4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    object-fit: contain;
+  }
+  .main-combo .card-combo4 .card-combcontent4 {
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .main-combo .card-combo5 {
+    display: grid;
+    grid-row: 3/4;
+    grid-column: 2/3;
+    justify-content: center;
+    align-items: end;
+    max-width: 360px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 10px black;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+  }
+  .main-combo .card-combo5 .card-combimg5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    object-fit: contain;
+  }
+  .main-combo .card-combo5 .card-combcontent5 {
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .main-combo .card-combo6 {
+    display: grid;
+    grid-row: 6/7;
+    grid-column: 2/3;
+    justify-content: center;
+    align-items: end;
+    max-width: 360px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 10px black;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+  }
+  .main-combo .card-combo6 .card-combimg6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    object-fit: contain;
+  }
+  .main-combo .card-combo6 .card-combcontent6 {
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
   }
   footer .sectionFinal {
     grid-row: 3/4;
@@ -947,7 +1569,6 @@ footer .sectionFofi {
     max-width: 100%;
   }
   header .navbar {
-    --bs-navbar-padding-y: 0.0rem;
     font-size: 20px;
   }
   header .navbar .container-fluid {
@@ -977,7 +1598,7 @@ footer .sectionFofi {
     align-items: center;
   }
   .main-index .sectionLogo {
-    grid-column: 3/6;
+    grid-column: 4/5;
   }
   .main-index .sectionPrincipal {
     grid-column: 2/7;
@@ -1175,6 +1796,32 @@ footer .sectionFofi {
     justify-content: center;
     align-items: center;
     gap: 10px;
+  }
+  .main-nos .info-nos {
+    display: grid;
+    grid-row: 1/2;
+    grid-column: 2/3;
+    justify-content: center;
+    align-items: center;
+    margin-top: -40px;
+  }
+  .main-nos .info-nos2 {
+    display: grid;
+    grid-row: 4/5;
+    grid-column: 1/3;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+    margin-top: -150px;
+  }
+  .main-nos .img-nos {
+    display: grid;
+    grid-row: 2;
+    grid-column: 2/3;
+    margin-left: -17px;
+  }
+  .main-nos .img-nos2 {
+    display: none;
   }
 }
 

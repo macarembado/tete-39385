@@ -1,4 +1,4 @@
-@media(max-width:425px) {
+@media(max-width:625px) {
     header {
         .navbar {
 
@@ -508,6 +508,7 @@ footer {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+      
        
     }
 
@@ -516,10 +517,11 @@ footer {
         font-size: 70%;
     }
 
-    .sectionFofi {
+    .sectionFofi {        
         justify-content: end;
         align-items: center;
         font-size: 10px;
+        padding-left: -25px;
     
     }
 }

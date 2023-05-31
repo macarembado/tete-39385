@@ -59,6 +59,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        
     }
 }
 
@@ -161,13 +162,12 @@
         margin-top: 5%;
 
         .card-img2 {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+         
             width: 100%;
             height: auto;
             margin-bottom: 10px;
-            object-fit: contain;
+            margin-left: 15px;
+           margin-top: -25px;
         }
 
         .card-content2 {
@@ -614,6 +614,7 @@
     justify-content: center;
     align-items: center;
     margin-left: 10%;
+
 }
 
 .section-form {
