@@ -1,27 +1,22 @@
 footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    background-color: #FFF5E4;
+    background-color: $background-principal;
     color: black;
     gap: 15%;
     font-family: 'Montserrat', sans-serif;
+
     .sectionFoin {
-        display: flex;
-        align-items: center;
         padding-left: 5px;
-        
+        @include flex(none, none, none, center);
     }
+
     .sectionFome {
-        display: flex;
-        justify-content: center;
-        align-items: center;
         gap: 20px;
+        @include flex(none, none, center, center);
     }
+
     .sectionFofi {
-        display: flex;
-        justify-content: end;
-        align-items: center;
-        ;
-        
+        @include flex(none, none, center, center);
     }
 }

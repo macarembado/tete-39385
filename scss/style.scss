@@ -1,4 +1,5 @@
 @import"./utilities/variables";
+@import"./utilities/mixins";
 @import"./base/reset";
 @import"./base/typo";
 @import"./layout/body.scss";
@@ -6,7 +7,10 @@
 @import"./layout/main";
 @import"./layout/footer";
 @import"./components/boostrap";
+@import"./layout/mediaquerry/media-1440";
 @import"./layout/mediaquerry/media-768";
 @import"./layout/mediaquerry/media-625";
 @import"./layout/mediaquerry/media-425";
 @import"./layout/mediaquerry/media-320";
+
+

@@ -1,4 +1,8 @@
 @media(max-width:625px) {
+    .hero{
+        width: 100vw;
+        height: 100vw;
+    }
     header {
         .navbar {
 
@@ -281,6 +285,7 @@
             align-items: center;
             margin-left: 30px;
             margin-top: -150px;
+            
         }
 
         .img-nos {
@@ -312,6 +317,7 @@
             margin-bottom: 20px;
             border-radius: 10px;
             margin-top: 5%;
+            margin-left: 5%;
     
             .card-combimg1 {
                 display: flex;
@@ -346,7 +352,7 @@
             margin-bottom: 20px;
             border-radius: 10px;
             margin-top: 5%;
-    
+            margin-left: 5%;
             .card-combimg2 {
                 display: flex;
                 justify-content: center;
@@ -379,7 +385,7 @@
             padding: 20px;
             margin-bottom: 20px;
             border-radius: 10px;
-            ;
+            margin-left: 5%;
     
             .card-combimg3 {
                 display: flex;
@@ -413,7 +419,7 @@
             padding: 20px;
             margin-bottom: 20px;
             border-radius: 10px;
-    
+            margin-left: 5%;
             .card-combimg4 {
                 display: flex;
                 justify-content: center;
@@ -446,7 +452,7 @@
             padding: 20px;
             margin-bottom: 20px;
             border-radius: 10px;
-    
+            margin-left: 5%;
             .card-combimg5 {
                 display: flex;
                 justify-content: center;
@@ -479,7 +485,7 @@
             padding: 20px;
             margin-bottom: 20px;
             border-radius: 10px;
-    
+            margin-left: 5%;
             .card-combimg6 {
                 display: flex;
                 justify-content: center;

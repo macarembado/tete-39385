@@ -1,4 +1,8 @@
 @media(max-width:768px) {
+    .hero{
+        width: 100vw;
+        height: 100vw;
+    }
     header {
         .navbar{
         
@@ -42,6 +46,11 @@
 
         }
 
+    }
+    .footer{
+        .sectionFome{
+            gap:10px;
+        }
     }
 
 }

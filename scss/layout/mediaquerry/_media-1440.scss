@@ -1,0 +1,57 @@
+@media(max-width:1440px) {
+    .hero{
+        width: 100vw;
+        height: 100vw;
+    }
+    .main-index {
+
+        .sectionLogo {
+            grid-column: 3/5;
+           
+            align-items: start;
+        }
+
+        .sectionPrincipal {
+            grid-column: 2/6;
+            grid-row: 2/3;
+            flex-direction: column;
+            justify-content: center;
+            align-items: end;
+        }
+
+        .sectionPrincipal2 {
+
+            grid-column: 2/6;
+            grid-row: 3/4;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+    footer {
+        .sectionFinal {
+            grid-row: 3/4;
+            grid-column: 4/7;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+           
+        }
+    
+        .sectionFoin {
+            align-items: center;
+            font-size: 20px;
+            
+        }
+        .sectionFome{
+            gap:40px;
+        }
+    
+        .sectionFofi {
+            justify-content: start;
+            align-items: center;
+            font-size: 20px;
+            padding-right: 40px;
+        
+        }
+    }
+    }

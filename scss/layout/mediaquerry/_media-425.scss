@@ -1,4 +1,8 @@
 @media(max-width:425px) {
+    .hero{
+        width: 100vw;
+        height: 100vw;
+    }
     header {
         .navbar {
 
@@ -514,6 +518,9 @@ footer {
     .sectionFoin {
         align-items: center;
         font-size: 70%;
+    }
+    .sectionFome{
+        gap:10px;
     }
 
     .sectionFofi {
