@@ -193,7 +193,6 @@ header .navbarb a .nav-link {
   height: auto;
   margin-bottom: 10px;
   margin-left: 15px;
-  margin-top: -25px;
 }
 .card-muffins .card-content2 {
   font-weight: bold;
@@ -800,6 +799,7 @@ footer .sectionFofi {
     height: auto;
     margin-bottom: 10px;
     object-fit: contain;
+    margin-left: -2px;
   }
   .main-prod .card-muffins .card-content2 {
     font-weight: bold;
